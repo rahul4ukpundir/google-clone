@@ -1,8 +1,11 @@
 import React from 'react'
-import { Avatar, Button } from '@material-ui/core'
-import { Apps, Camera, InputTwoTone, Mic, Search } from '@material-ui/icons'
-import './Home.css';
+import { Avatar } from '@material-ui/core'
+import { Apps } from '@material-ui/icons'
 import RahulJPG from "../images/Rahul.jpg";
+import SearchContainer from './SearchContainer';
+import './Home.css';
+
+
 
 const Home = () => {
   return (
@@ -17,16 +20,9 @@ const Home = () => {
       <div className='homepage_body'>
         <img src ="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
         />
-        <div className='search_input'>
-            <Search className ='left-search-icon' />
-            <input />
-            <InputTwoTone className ='left-search-icon'/>
-            <Mic  className ='left-search-icon'/>
-            <Camera className ='left-search-icon' />
-        </div>
-        <button className='btn-google-search' title='Google Search' >Google Search </button>
-        
+      <SearchContainer />
       </div>
+      
     </div>
   )
 }
