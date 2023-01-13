@@ -15,6 +15,15 @@ const SearchContainer = ({isSearchButtonHide = false}) => {
   const data =response;
 
 
+  const searchHandlerOnTextBox = (e) =>{
+    if(e.key === 'Enter'){
+      dispatch({
+        type: "SET_GOOGLE_DATA",
+        googleData: data
+      })
+      e.preventDefault();
+    }
+  }
 
   const searchHandler = (e) => {
     e.preventDefault();
@@ -30,7 +39,7 @@ const SearchContainer = ({isSearchButtonHide = false}) => {
     <form className='search'>
        <div className='search_input'>
             <Search className ='left-search-icon' />
-            <input onChange={(event) =>searchInput(event.target.value)} />
+            <input onChange={(event) =>searchInput(event.target.value)} onKeyDown = {searchHandlerOnTextBox}/>
             {/* <InputTwoTone className ='left-search-icon news'/> */}
             <Mic  className ='left-search-icon'/>
             {/* <Camera className ='left-search-icon camera' /> */}
