@@ -31,9 +31,9 @@ const SearchContainer = ({isSearchButtonHide = false}) => {
        <div className='search_input'>
             <Search className ='left-search-icon' />
             <input onChange={(event) =>searchInput(event.target.value)} />
-            <InputTwoTone className ='left-search-icon'/>
+            {/* <InputTwoTone className ='left-search-icon news'/> */}
             <Mic  className ='left-search-icon'/>
-            <Camera className ='left-search-icon' />
+            {/* <Camera className ='left-search-icon camera' /> */}
         </div>
         <div className='button-google-search'>
         {!isSearchButtonHide ?   <button type="submit" className='btn-google-search' title='Google Search' onClick={searchHandler}>Google Search </button> :

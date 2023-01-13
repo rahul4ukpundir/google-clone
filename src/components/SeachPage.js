@@ -18,7 +18,7 @@ const SeachPage = () => {
 
         <div className='searchPage_header_body'>
           <SearchContainer isSearchButtonHide />
-          {/* <div className='search_options'>
+          <div className='search_options'>
             <div className='left_search_option'>
               <Search />
               <Link>All</Link>
@@ -34,7 +34,7 @@ const SeachPage = () => {
             <div className='right_search_option'>
               <Link>Tools</Link>
             </div>
-          </div> */}
+          </div>
 
 
         </div>

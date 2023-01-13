@@ -128,8 +128,14 @@
         margin-top: 0;
         width: unset;
         margin-left: 0px  !important;
-        max-width: 300px !important;
+        max-width: 250px !important;
         
+       }
+       .camera{
+        display: none;
+       }
+       .news{
+        display: none;
        }
        .search_result_section{
         font-size: 12px;
@@ -141,6 +147,9 @@
         margin:2px  !important;
         text-align: justify;
         max-width: 350px;
+    }
+    .search_options{
+        display: none;
     }
 }
 
